@@ -1,0 +1,25 @@
+==== PROGRAM 6 : React (frontend) + Express (backend) using axios & CORS ====
+Needs TWO terminals: one for backend, one for frontend.
+
+# ---------- TERMINAL 1 : BACKEND ----------
+cd fsadlab/p6/backend
+npm install
+#   -- From scratch: npm init -y && npm install express cors
+node myinventory.js     # or: npm start
+# -> express is working at http://localhost:8000
+# Test: curl http://localhost:8000
+#       curl -X POST http://localhost:8000/add -H "Content-Type: application/json" -d "{\"id\":5,\"prodname\":\"prod5\",\"qty\":4,\"price\":20}"
+
+# ---------- TERMINAL 2 : FRONTEND ----------
+cd fsadlab/p6/frontend
+npm install
+#   -- From scratch: npx create-react-app frontend && cd frontend && npm install axios
+npm start
+# -> http://localhost:3000   (React app calls backend on port 8000)
+
+# File structure:
+#   backend/myinventory.js
+#   frontend/src/index.js
+#   frontend/src/to_inventory.js
+
+# Stop each: Ctrl + C

@@ -1,0 +1,19 @@
+==== PROGRAM 2 : Express - handling HTML form data with GET and POST ====
+
+cd fsadlab/p2
+npm install
+#   -- From scratch: npm init -y && npm install express
+
+node server.js          # or: npm start
+# -> Server is listening at http://localhost:3000
+
+# Open in browser:
+#   http://localhost:3000/index.html
+# Fill the GET form  -> goes to /submit-get  (data in req.query, visible in URL)
+# Fill the POST form -> goes to /submit-post (data in req.body, hidden)
+
+# Quick terminal test:
+curl "http://localhost:3000/submit-get?name=Ravi&branch=MCA&semester=3"
+curl -X POST http://localhost:3000/submit-post -d "name=Ravi&branch=MCA&semester=3"
+
+# Stop server: Ctrl + C

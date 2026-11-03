@@ -1,0 +1,19 @@
+==== PROGRAM 4 : React - props, state, lifecycle (componentDidMount) & adding students ====
+
+# OPTION A: run this folder directly
+cd fsadlab/p4
+npm install
+npm start
+# -> http://localhost:3000   (table appears after 5 seconds - simulated loadData())
+
+# OPTION B: from scratch
+npx create-react-app student-app
+cd student-app
+# copy Education.js into src/, replace src/index.js with the one here
+npm start
+
+# File structure:
+#   src/index.js
+#   src/Education.js    (StudentRow, StudentsTable, StudentAddSubmit, StudentListTable)
+
+# Stop: Ctrl + C

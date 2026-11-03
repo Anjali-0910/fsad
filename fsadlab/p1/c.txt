@@ -1,0 +1,29 @@
+==== PROGRAM 1 : Express REST API for Books (GET/POST/PUT/PATCH/DELETE) ====
+
+# 1. Check node & npm are installed
+node -v
+npm -v
+
+# 2. Go into the folder
+cd fsadlab/p1
+
+# 3. (Already have package.json) install dependencies
+npm install
+#   -- If you were starting from scratch instead:
+#   npm init -y
+#   npm install express
+
+# 4. Run the server
+node server.js          # or: npm start
+# -> Server is running on http://localhost:3000
+
+# 5. Test the API (open a 2nd terminal)
+curl http://localhost:3000/books
+curl http://localhost:3000/books/1
+curl -X POST http://localhost:3000/books -H "Content-Type: application/json" -d "{\"title\":\"New Book\",\"author\":\"Me\",\"price\":20,\"quantity\":3}"
+curl -X PUT   http://localhost:3000/books
+curl -X PATCH http://localhost:3000/books
+curl -X DELETE http://localhost:3000/books/2
+
+# (Or use Postman / Thunder Client in VS Code with the same URLs)
+# Stop server: Ctrl + C

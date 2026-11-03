@@ -1,0 +1,18 @@
+==== PROGRAM 5 : React - Registration form with validation (controlled components) ====
+
+# OPTION A: run this folder directly
+cd fsadlab/p5
+npm install
+npm start
+# -> http://localhost:3000
+
+# OPTION B: from scratch
+npx create-react-app registration-app
+cd registration-app
+# copy RegistrationForm.js into src/, replace src/index.js with the one here
+npm start
+
+# Test: leave fields empty / name < 3 letters / bad email / password < 8 letters
+#       -> red error messages; valid input -> alert("Form submitted!")
+
+# Stop: Ctrl + C

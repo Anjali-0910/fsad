@@ -1,0 +1,26 @@
+==== PROGRAM 8 : MongoDB - text index + aggregation pipeline ($match, $project, textScore) ====
+
+# 0. Start MongoDB server first
+#    Windows : net start MongoDB
+#    Linux   : sudo systemctl start mongod
+#    Mac     : brew services start mongodb-community
+
+# 1. Option A - run whole script
+cd fsadlab/p8
+mongosh fsadlab_db --file catalog.js
+
+# 2. Option B - interactive
+mongosh
+  use fsadlab_db
+  # paste db.catalog.insertMany([...]) from catalog.js
+  db.catalog.createIndex({ name:"text", description:"text", tags:"text" })
+  db.catalog.getIndexes()
+  db.catalog.aggregate([
+    { $match:   { $text: { $search: "durable backpack" } } },
+    { $project: { _id:0, name:1, price:1, score:{ $meta:"textScore" } } }
+  ])
+  db.catalog.drop()            # clean up
+  exit
+
+# Expected: "Classic Leather Backpack" (higher score) and "Durable Cotton T-Shirt"
+# (exact score values may differ from the lab manual)

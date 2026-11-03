@@ -1,0 +1,33 @@
+==================== FSAD LAB (MCA261I) - MASTER COMMANDS ====================
+
+PREREQUISITES (install once)
+  Node.js (LTS)  : https://nodejs.org        -> check:  node -v   &   npm -v
+  MongoDB + mongosh (for p7, p8) -> check:  mongosh --version
+  VS Code, Postman (optional)
+
+FOLDER MAP
+  p1  Express REST API (books)           -> node server.js          (port 3000)
+  p2  Express GET/POST form              -> node server.js          (port 3000)
+  p3  React resume (class components)    -> npm install && npm start
+  p4  React student list (state/props)   -> npm install && npm start
+  p5  React registration form validation -> npm install && npm start
+  p6  React + Express inventory          -> backend: node myinventory.js (8000)
+                                            frontend: npm install && npm start
+  p7  MongoDB comparison/logical queries -> mongosh fsadlab_db --file employees.js
+  p8  MongoDB text index + aggregation   -> mongosh fsadlab_db --file catalog.js
+  p9  (not in PDF - placeholder)
+  p10 React Router                       -> npm install && npm start
+
+Each folder has its own c.txt with detailed commands.
+
+HANDY COMMANDS
+  npm install                    install dependencies from package.json
+  npm start                      run the app
+  npx create-react-app <name>    new React project
+  npm install express cors axios react-router-dom
+  netstat -ano | findstr :3000   (Windows)  find who is using port 3000
+  lsof -i :3000                  (Mac/Linux)
+  Ctrl + C                       stop a running server
+
+NOTE: Two React apps both default to port 3000. Run only one at a time
+(or when asked "use another port?" press Y).

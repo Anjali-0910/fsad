@@ -1,0 +1,3 @@
+nav ul { list-style: none; display: flex; gap: 20px; padding: 10px; background: #eee; }
+nav a { text-decoration: none; color: #0a58ca; font-weight: bold; }
+main { padding: 10px 20px; }

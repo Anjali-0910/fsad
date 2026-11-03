@@ -1,0 +1,3 @@
+{ "name": "p6-inventory-backend", "version": "1.0.0", "main": "myinventory.js",
+  "scripts": { "start": "node myinventory.js" },
+  "dependencies": { "express": "^4.19.2", "cors": "^2.8.5" } }

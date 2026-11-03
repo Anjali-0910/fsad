@@ -1,0 +1,19 @@
+==== PROGRAM 9 : (missing in the PDF - add your code here) ====
+
+# Generic commands, depending on program type:
+
+# --- Node / Express program ---
+cd fsadlab/p9
+npm init -y
+npm install express
+node yourfile.js
+
+# --- React program ---
+npx create-react-app p9-app
+cd p9-app
+npm start
+
+# --- MongoDB program ---
+mongosh
+  use fsadlab_db
+  # your queries here

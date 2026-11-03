@@ -1,0 +1,25 @@
+==== PROGRAM 10 : React Router - multi-page navigation (Home, About, Contact) ====
+
+# OPTION A: run this folder directly
+cd fsadlab/p10
+npm install
+npm start
+# -> http://localhost:3000        (Home)
+#    http://localhost:3000/about
+#    http://localhost:3000/contact
+
+# OPTION B: from scratch
+npx create-react-app router-app
+cd router-app
+npm install react-router-dom
+mkdir src/pages
+# copy Home.js, About.js, Contact.js into src/pages/ ; replace src/App.js
+npm start
+
+# File structure:
+#   src/index.js
+#   src/App.js  (BrowserRouter, Routes, Route, Link)
+#   src/App.css
+#   src/pages/Home.js  About.js  Contact.js
+
+# Stop: Ctrl + C
