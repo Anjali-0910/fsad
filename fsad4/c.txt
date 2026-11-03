@@ -1,0 +1,34 @@
+cd ~/Desktop
+
+npx create-react-app fsad4
+
+cd fsad4
+
+
+
+2. Create necessary folders inside src:
+
+mkdir -p src/components
+
+
+
+3. Create the Student component file:
+
+touch src/Student.js
+
+
+
+4. File Placement Instructions:
+
+- Open your project in VS Code.
+
+- Inside the 'src/' folder, place your Student component code into the 'Student.js' file.
+
+- Update your 'src/index.js' file to import and render your main component (<StudentListTable />).
+
+
+
+5. Start the Application:
+
+npm start
+

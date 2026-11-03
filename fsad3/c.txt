@@ -1,0 +1,44 @@
+1. Navigate to Desktop and create the React project:
+
+cd ~/Desktop
+
+npx create-react-app fsad3
+
+cd fsad3
+
+
+
+2. Create the custom folder and component files inside src:
+
+mkdir -p src/resume
+
+touch src/resume/resume_header.js
+
+touch src/resume/resume_personal_info.js
+
+touch src/resume/educational.js
+
+
+
+3. Create the CSS file (required by index.js):
+
+touch src/index.css
+
+
+
+4. Start the development server (after putting the code in files):
+
+npm start
+
+
+
+
+----------------------------------------------------
+
+NOTE: 
+
+- Make sure public/index.html has <div id="root"></div>.
+
+- Ensure component names in index.js use PascalCase.
+
+----------------------------------------------------
