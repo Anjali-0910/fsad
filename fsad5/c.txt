@@ -1,0 +1,26 @@
+============================================================
+PROGRAM 5: React Registration Form with Validation - LAB GUIDE
+============================================================
+
+1. STEPS TO CREATE THE PROJECT & FOLDERS:
+------------------------------------------------------------
+Open your terminal and run the following commands:
+  cd ~/Desktop/fsadlab
+  npx create-react-app fsad5
+  cd fsad5
+
+2. FILES TO UPDATE INSIDE fsad5/src/:
+------------------------------------------------------------
+- src/RegistrationForm.js (Contains state, validation rules, and form UI)
+- src/App.js (Imports and renders <RegistrationForm />)
+
+3. COMMANDS TO RUN AND EXECUTE:
+------------------------------------------------------------
+  cd ~/Desktop/fsadlab/fsad5
+  npm start
+
+4. TESTING IN BROWSER:
+------------------------------------------------------------
+  Open your web browser and navigate to:
+  http://localhost:3000
+============================================================

@@ -18,7 +18,7 @@ class StudentRow extends React.Component {
     );
   }
 }
-
+ 
 class StudentsTable extends React.Component {
   render() {
     const studrows = this.props.studlist.map((studli) => (
